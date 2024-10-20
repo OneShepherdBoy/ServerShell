@@ -1,0 +1,4 @@
+set(HELP_SHELL_SERVER_TARGET_NAME helpshellserver)
+add_executable(${HELP_SHELL_SERVER_TARGET_NAME} helpshellserver.cpp)
+target_link_libraries(${HELP_SHELL_SERVER_TARGET_NAME} PUBLIC ${SHELL_SERVER_TARGET_NAME})
+add_dependencies(${HELP_SHELL_SERVER_TARGET_NAME} ${SHELL_SERVER_TARGET_NAME})

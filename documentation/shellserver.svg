@@ -8,7 +8,10 @@
    version="1.1"
    id="svg5"
    inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
-   sodipodi:docname="server_shell.svg"
+   sodipodi:docname="shellserver.svg"
+   inkscape:export-filename="/home/boris/the_shepherd_company/projects/libraries/ServerShell/documentation/shellserver.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -24,9 +27,9 @@
      inkscape:document-units="mm"
      showgrid="false"
      units="px"
-     inkscape:zoom="1.0633188"
-     inkscape:cx="520.54005"
-     inkscape:cy="428.37577"
+     inkscape:zoom="0.75187991"
+     inkscape:cx="496.75486"
+     inkscape:cy="548.62485"
      inkscape:window-width="1850"
      inkscape:window-height="1016"
      inkscape:window-x="70"
@@ -45,28 +48,31 @@
        width="338.57617"
        height="190.76956"
        x="0.080993578"
-       y="-0.28320906" />
+       y="-0.28320906"
+       inkscape:export-filename="/home/boris/the_shepherd_company/projects/libraries/ServerShell/documentation/server_shell.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:50.8px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-       x="33.092766"
+       x="41.667091"
        y="106.6147"
        id="text1878"><tspan
          sodipodi:role="line"
          id="tspan1876"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:50.8px;font-family:Loverine;-inkscape-font-specification:Loverine;stroke-width:0.264583"
-         x="33.092766"
-         y="106.6147">Server Shell</tspan></text>
+         x="41.667091"
+         y="106.6147">ShellServer</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:16.9333px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-       x="65.664474"
+       x="45.556122"
        y="137.55316"
        id="text6620"><tspan
          sodipodi:role="line"
          id="tspan6618"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.9333px;font-family:'Latin Modern Sans';-inkscape-font-specification:'Latin Modern Sans';fill:#808080;stroke-width:0.264583"
-         x="65.664474"
-         y="137.55316">Bootstrap your server shell cli!</tspan></text>
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.9333px;font-family:'Latin Modern Mono Slanted';-inkscape-font-specification:'Latin Modern Mono Slanted Italic';fill:#808080;stroke-width:0.264583"
+         x="45.556122"
+         y="137.55316">Bootstrap your shell server!</tspan></text>
   </g>
 </svg>

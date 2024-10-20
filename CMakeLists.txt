@@ -21,9 +21,9 @@ if(PROJECT_SOURCE_DIR STREQUAL PROJECT_BINARY_DIR)
 endif()
 
 ## Library name
-set(SERVER_SHELL_TARGET_NAME server_shell)
+set(SHELL_SERVER_TARGET_NAME shellserver)
 
 # Project components
-add_subdirectory(include/server_shell)
+add_subdirectory(include/shellserver)
 ## add_subdirectory(examples)
 ## add_subdirectory(tests)

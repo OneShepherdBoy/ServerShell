@@ -1,0 +1,63 @@
+name: build_on_ubuntu.yml
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+  actions: read
+  checks: write
+
+jobs:
+  ci_build_and_execute_examples_classic:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install git and unzip
+        run: sudo apt-get update ; sudo apt-get install -y git unzip
+      - uses: actions/checkout@v3
+      - name: Get the latest CMake
+        uses: lukka/get-cmake@v3.27.7
+      - name: Run CMake
+        run: cmake -S . -B build
+      - name: Build
+        run: cmake --build build
+      - name: Execute example Stack of classes
+        run: build/examples/stackofclasses/stackofclasses
+      - name: Execute example Stack of floating point numbers
+        run: build/examples/stackoffloatingpointnumbers/stackoffloatingpointnumbers
+      - name: Execute example Stack of integers
+        run: build/examples/stackofintegers/stackofintegers
+      - name: Execute example Stack of Stack of
+        run: build/examples/stackofstackofs/stackofstacks
+      - name: Execute example Stack of strings
+        run: build/examples/stackofstrings/stackofstrings
+      - name: Execute example Stack of structs
+        run: build/examples/stackofstructs/stackofstructs
+
+  ci_build_and_run_unit_tests_classic:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install git and unzip
+        run: sudo apt-get update ; sudo apt-get install -y git unzip
+      - uses: actions/checkout@v3
+      - name: Get the latest CMake
+        uses: lukka/get-cmake@v3.27.7
+      - name: Run CMake
+        run: cmake -S . -B build
+      - name: Build
+        run: cmake --build build
+      - name: Execute unit tests
+        run: build/tests/stackof_unit_tests --gtest_output="xml:unit_test_report.xml"
+      - name: Publishing unit test report
+        uses: dorny/test-reporter@v1
+        with:
+          path: 'unit_test_report.xml'
+          name: StackOf Unit Tests
+          reporter: jest-junit
+          only-summary: 'false'
+          list-suites: 'all'
+          list-tests: 'all'
+          fail-on-error: 'true'
+          fail-on-empty: 'true'
+          working-directory: ''
+
