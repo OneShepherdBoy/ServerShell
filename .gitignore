@@ -1,0 +1,19 @@
+# Ignore IDE directory
+.idea*
+
+# Ignore build directories
+build/*
+build_debug
+build_release
+
+# Ignore generated and user folders
+cmake-build-debug
+
+# Ignore generated and user files
+**/CMakeCache.txt
+**/CMakeUserPresets.json
+**/CTestTestfile.cmake
+**/CPackConfig.cmake
+**/cmake_install.cmake
+**/install_manifest.txt
+**/compile_commands.json
